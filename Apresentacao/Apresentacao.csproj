@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D40B1353-2E21-405C-89E5-DAF3B29E9D98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apresentacao</RootNamespace>
+    <AssemblyName>Apresentacao</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>img_loco-icone64x64.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcaoNaTela.cs" />
+    <Compile Include="RltFrmRelatorioDataKm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RltFrmRelatorioDataKm.Designer.cs">
+      <DependentUpon>RltFrmRelatorioDataKm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitCodeFrotaBDDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExitCodeFrotaBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovAbastecimentoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovAbastecimentoCadastrar.Designer.cs">
+      <DependentUpon>FrmMovAbastecimentoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMovAbastecimentoSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMovAbastecimentoSelecionar.Designer.cs">
+      <DependentUpon>FrmMovAbastecimentoSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSobreSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSobreSistema.Designer.cs">
+      <DependentUpon>FrmSobreSistema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioSelecionar.Designer.cs">
+      <DependentUpon>FrmUsuarioSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarioCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarioCadastrar.Designer.cs">
+      <DependentUpon>FrmUsuarioCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPostoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPostoCadastrar.Designer.cs">
+      <DependentUpon>FrmPostoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPostoSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPostoSelecionar.Designer.cs">
+      <DependentUpon>FrmPostoSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServicoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServicoCadastrar.Designer.cs">
+      <DependentUpon>FrmServicoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmServicoSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmServicoSelecionar.Designer.cs">
+      <DependentUpon>FrmServicoSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoCadastrar.Designer.cs">
+      <DependentUpon>FrmCargoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManutencaoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManutencaoCadastrar.Designer.cs">
+      <DependentUpon>FrmManutencaoCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManutencaoSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManutencaoSelecionar.Designer.cs">
+      <DependentUpon>FrmManutencaoSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuncionarioCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionarioCadastrar.Designer.cs">
+      <DependentUpon>FrmFuncionarioCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFuncionarioSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFuncionarioSelecionar.Designer.cs">
+      <DependentUpon>FrmFuncionarioSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFrotaCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFrotaCadastrar.Designer.cs">
+      <DependentUpon>FrmFrotaCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCombustivelSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCombustivelSelecionar.Designer.cs">
+      <DependentUpon>FrmCombustivelSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCombustivelCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCombustivelCadastrar.Designer.cs">
+      <DependentUpon>FrmCombustivelCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCausaCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCausaCadastrar.Designer.cs">
+      <DependentUpon>FrmCausaCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCausaSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCausaSelecionar.Designer.cs">
+      <DependentUpon>FrmCausaSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCargoSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoSelecionar.Designer.cs">
+      <DependentUpon>FrmCargoSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFrotaSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFrotaSelecionar.Designer.cs">
+      <DependentUpon>FrmFrotaSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMotoristaCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMotoristaCadastrar.Designer.cs">
+      <DependentUpon>FrmMotoristaCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMotoristaSelecionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMotoristaSelecionar.Designer.cs">
+      <DependentUpon>FrmMotoristaSelecionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RltFrmRelatorioDataValor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RltFrmRelatorioDataValor.Designer.cs">
+      <DependentUpon>RltFrmRelatorioDataValor.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RltFrmRelatorioDataKm.resx">
+      <DependentUpon>RltFrmRelatorioDataKm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RtlMovimentoPorDataKM.rdlc" />
+    <EmbeddedResource Include="FrmMovAbastecimentoCadastrar.resx">
+      <DependentUpon>FrmMovAbastecimentoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMovAbastecimentoSelecionar.resx">
+      <DependentUpon>FrmMovAbastecimentoSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSobreSistema.resx">
+      <DependentUpon>FrmSobreSistema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioSelecionar.resx">
+      <DependentUpon>FrmUsuarioSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioCadastrar.resx">
+      <DependentUpon>FrmUsuarioCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPostoCadastrar.resx">
+      <DependentUpon>FrmPostoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPostoSelecionar.resx">
+      <DependentUpon>FrmPostoSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServicoCadastrar.resx">
+      <DependentUpon>FrmServicoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmServicoSelecionar.resx">
+      <DependentUpon>FrmServicoSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoCadastrar.resx">
+      <DependentUpon>FrmCargoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManutencaoCadastrar.resx">
+      <DependentUpon>FrmManutencaoCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManutencaoSelecionar.resx">
+      <DependentUpon>FrmManutencaoSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFuncionarioCadastrar.resx">
+      <DependentUpon>FrmFuncionarioCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFuncionarioSelecionar.resx">
+      <DependentUpon>FrmFuncionarioSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFrotaCadastrar.resx">
+      <DependentUpon>FrmFrotaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCombustivelSelecionar.resx">
+      <DependentUpon>FrmCombustivelSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCombustivelCadastrar.resx">
+      <DependentUpon>FrmCombustivelCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCausaCadastrar.resx">
+      <DependentUpon>FrmCausaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCausaSelecionar.resx">
+      <DependentUpon>FrmCausaSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoSelecionar.resx">
+      <DependentUpon>FrmCargoSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFrotaSelecionar.resx">
+      <DependentUpon>FrmFrotaSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMotoristaCadastrar.resx">
+      <DependentUpon>FrmMotoristaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMotoristaSelecionar.resx">
+      <DependentUpon>FrmMotoristaSelecionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RltFrmRelatorioDataValor.resx">
+      <DependentUpon>RltFrmRelatorioDataValor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RtlMovimentoPorDataValor.rdlc" />
+    <None Include="ExitCodeFrotaBDDataSet.xsc">
+      <DependentUpon>ExitCodeFrotaBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ExitCodeFrotaBDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ExitCodeFrotaBDDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExitCodeFrotaBDDataSet.xss">
+      <DependentUpon>ExitCodeFrotaBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcessoBancoDados\AcessoBancoDados.csproj">
+      <Project>{71806755-b471-4a35-a1d8-f37742ff244b}</Project>
+      <Name>AcessoBancoDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{ad7604f2-0ff0-4e4f-aa66-1779ddbe47b2}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjetoTransferencia\ObjetoTransferencia.csproj">
+      <Project>{5acb6723-71b2-4483-8300-b5f9a46251ce}</Project>
+      <Name>ObjetoTransferencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sistema.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img_loco-icone64x64.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
