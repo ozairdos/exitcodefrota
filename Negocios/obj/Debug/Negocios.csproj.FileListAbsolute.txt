@@ -1,0 +1,9 @@
+C:\proj\exitcodefrota\Negocios\bin\Debug\Negocios.dll
+C:\proj\exitcodefrota\Negocios\bin\Debug\Negocios.pdb
+C:\proj\exitcodefrota\Negocios\bin\Debug\AcessoBancoDados.dll
+C:\proj\exitcodefrota\Negocios\bin\Debug\ObjetoTransferencia.dll
+C:\proj\exitcodefrota\Negocios\bin\Debug\AcessoBancoDados.pdb
+C:\proj\exitcodefrota\Negocios\bin\Debug\ObjetoTransferencia.pdb
+C:\proj\exitcodefrota\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\proj\exitcodefrota\Negocios\obj\Debug\Negocios.dll
+C:\proj\exitcodefrota\Negocios\obj\Debug\Negocios.pdb
