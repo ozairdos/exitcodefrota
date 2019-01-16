@@ -1,4 +1,5 @@
 C:\proj\exitcodefrota\ObjetoTransferencia\bin\Release\ObjetoTransferencia.dll
 C:\proj\exitcodefrota\ObjetoTransferencia\bin\Release\ObjetoTransferencia.pdb
+C:\proj\exitcodefrota\ObjetoTransferencia\obj\Release\ObjetoTransferencia.csprojResolveAssemblyReference.cache
 C:\proj\exitcodefrota\ObjetoTransferencia\obj\Release\ObjetoTransferencia.dll
 C:\proj\exitcodefrota\ObjetoTransferencia\obj\Release\ObjetoTransferencia.pdb

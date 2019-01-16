@@ -1,15 +1,25 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Xml;
 
 namespace AcessoBancoDados
 {
     public class AcessoDadosSqlServer
     {
+        String conn = String.Empty;
+
         //Cria a conexão
         private SqlConnection CriarConexao()
         {
-            return new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["stringConexao"].ConnectionString);
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(System.Environment.CurrentDirectory + "\\ConnectionStrings.xml");// xml contendo as connectionStrings encryptadas
+
+            XmlNodeList xNodeList = xmlDoc.GetElementsByTagName("ConnectiosStrings");
+            foreach (XmlNode xNode in xNodeList)
+                conn = xNode["StringBD"].InnerText;// lendo a connectionstring
+            
+            return new SqlConnection(conn); 
         }
 
         //Parâmetro que vão para banco

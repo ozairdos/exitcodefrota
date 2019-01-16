@@ -1,33 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using Negocios;
-using ObjetoTransferencia;
 using System.Data.SqlClient;
+using System.Xml;
 
 
 namespace Apresentacao
 {
     public partial class FrmLogin : Form
     {
-        //conexao banco
-        SqlConnection sqlConn = null;
-        private string strConn = @"Data Source=.\SQLEXPRESS2016;Initial Catalog=ExitCodeFrotaBD;Persist Security Info=True;User ID=sa;Password=123456";
+        
+        //Criar conexão        
+        SqlConnection sqlConn = null;        
         private string _Sql = string.Empty;
 
         public bool logado = false;
 
         public FrmLogin()
         {
-            InitializeComponent();
-           
+            InitializeComponent();            
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -42,7 +33,7 @@ namespace Apresentacao
         }
         private void Logar()
         {
-            sqlConn = new SqlConnection(strConn);
+            sqlConn = CriarConexao();
             string usu, pwd;
 
             try
@@ -94,6 +85,21 @@ namespace Apresentacao
             {
                 Logar();
             }
-        }         
+        }
+
+        //Cria a conexão
+        private SqlConnection CriarConexao()
+        {
+            String conn = String.Empty;
+
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(System.Environment.CurrentDirectory + "\\ConnectionStrings.xml");// xml contendo as connectionStrings encryptadas
+
+            XmlNodeList xNodeList = xmlDoc.GetElementsByTagName("ConnectiosStrings");
+            foreach (XmlNode xNode in xNodeList)
+                conn = xNode["StringBD"].InnerText;// lendo a connectionstring
+
+            return new SqlConnection(conn);
+        }
     }
 }

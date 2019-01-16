@@ -1,4 +1,5 @@
 C:\proj\exitcodefrota\Apresentacao\bin\Debug\Apresentacao.exe.config
+C:\proj\exitcodefrota\Apresentacao\bin\Debug\ConnectionStrings.xml
 C:\proj\exitcodefrota\Apresentacao\bin\Debug\Apresentacao.exe
 C:\proj\exitcodefrota\Apresentacao\bin\Debug\Apresentacao.pdb
 C:\proj\exitcodefrota\Apresentacao\bin\Debug\AcessoBancoDados.dll

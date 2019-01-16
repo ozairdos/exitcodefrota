@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ConnectiosStrings>
+  <StringBD>Data Source=.\SQLEXPRESS2016;Initial Catalog=ExitCodeFrotaBD;User ID=sa;Password=123456</StringBD>  
+</ConnectiosStrings> 

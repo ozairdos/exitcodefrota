@@ -22,17 +22,7 @@ namespace Apresentacao.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string stringConexao {
-            get {
-                return ((string)(this["stringConexao"]));
-            }
-            set {
-                this["stringConexao"] = value;
-            }
-        }
+
+        public string stringConexao { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 C:\proj\exitcodefrota\AcessoBancoDados\bin\Release\AcessoBancoDados.dll
 C:\proj\exitcodefrota\AcessoBancoDados\bin\Release\AcessoBancoDados.pdb
+C:\proj\exitcodefrota\AcessoBancoDados\obj\Release\AcessoBancoDados.csprojResolveAssemblyReference.cache
 C:\proj\exitcodefrota\AcessoBancoDados\obj\Release\AcessoBancoDados.dll
 C:\proj\exitcodefrota\AcessoBancoDados\obj\Release\AcessoBancoDados.pdb
