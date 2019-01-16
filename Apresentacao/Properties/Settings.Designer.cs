@@ -23,14 +23,15 @@ namespace Apresentacao.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS2016;Initial Catalog=ExitCodeFrotaBD;User ID=sa;Password=" +
-            "123456")]
-        public string ExitCodeFrotaBDConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string stringConexao {
             get {
-                return ((string)(this["ExitCodeFrotaBDConnectionString"]));
+                return ((string)(this["stringConexao"]));
+            }
+            set {
+                this["stringConexao"] = value;
             }
         }
     }

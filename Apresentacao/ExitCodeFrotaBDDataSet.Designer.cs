@@ -6274,7 +6274,7 @@ namespace Apresentacao.ExitCodeFrotaBDDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6592,7 +6592,7 @@ namespace Apresentacao.ExitCodeFrotaBDDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6910,7 +6910,7 @@ SELECT IDCADCOMBUSTIVEL, CADCOMBUSTIVEL FROM TBCADCOMBUSTIVEL WHERE (IDCADCOMBUS
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7266,7 +7266,7 @@ SELECT IDCADFROTA, CADTIPODEVEICULO, CADVEICULO, CADPLACA, CADCOR, CADANO, CADDO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7810,7 +7810,7 @@ SELECT IDCADFUNCIONARIO, CADNOMEFUNCIONARIO, CADENDFUNCIONARIO, CADTELFUNCIONARI
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8293,7 +8293,7 @@ SELECT IDCADMANUTENCAO, CADMANUTENCAO FROM TBCADMANUTENCAO WHERE (IDCADMANUTENCA
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8644,7 +8644,7 @@ SELECT IDCADMOTORISTA, CADNOMEMOTORISTA, CADENDMOTORISTA, CADTELMOTORISTA, CADCP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9127,7 +9127,7 @@ SELECT IDCADMOTORISTA, CADNOMEMOTORISTA, CADENDMOTORISTA, CADTELMOTORISTA, CADCP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9445,7 +9445,7 @@ SELECT IDCADMOTORISTA, CADNOMEMOTORISTA, CADENDMOTORISTA, CADTELMOTORISTA, CADCP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9769,7 +9769,7 @@ SELECT IDCADUSUARIO, CADUSUARIO, CADSENHA FROM TBCADUSUARIO WHERE (IDCADUSUARIO 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10208,7 +10208,7 @@ SELECT IDABAFROTA, ABADATAFROTA, ABAVEICULO, ABAPOSTO, ABACOMBUSTIVEL, ABAVALORU
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10872,7 +10872,7 @@ SELECT IDMANFROTA, MANDATAFROTA, MANVEICULO, MANPOSTO, MANMANUTENCAO, MANCAUSA, 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.ExitCodeFrotaBDConnectionString;
+            this._connection.ConnectionString = global::Apresentacao.Properties.Settings.Default.stringConexao;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

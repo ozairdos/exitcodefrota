@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-//Namespace´s que contém as classes que manipulam dados
 using System.Data;
 using System.Data.SqlClient;
-
-//String de conexão
-using AcessoBancoDados.Properties;
 
 namespace AcessoBancoDados
 {
@@ -18,7 +9,7 @@ namespace AcessoBancoDados
         //Cria a conexão
         private SqlConnection CriarConexao()
         {
-            return new SqlConnection(Settings.Default.stringConexao);
+            return new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["stringConexao"].ConnectionString);
         }
 
         //Parâmetro que vão para banco
