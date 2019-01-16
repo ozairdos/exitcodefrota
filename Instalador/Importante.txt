@@ -1,0 +1,12 @@
+O sistema EXITCODE FROTA foi desenvolvido open source com o intuito de agregar novos conhecimentos acadêmico.
+ 
+SISTEMA OPERACIONAL
+Mínimo: Windows 7 (service pack 1), 32 ou 64 bits, ou superior, com Microsoft. NET Framework 4.5 instalado, últimas atualizações do windows update.
+
+1 - Criar banco de dados "ExitCodeFrotaBD" no SQL server e rodar a query.
+2 - Cadastrar usuário e senha através do banco de dados na TBCADUSUARIO.
+3 - Rodas o instalador "SetupEXITCODE_FROTA.exe".
+4 - Configurar conection string "Apresentacao.exe.config" localizado na pasta do sistema "EXITCODE_FROTA".
+5 - Acessar o sistema e utilizar a solução de controle de frota.
+
+By ozair.santos
